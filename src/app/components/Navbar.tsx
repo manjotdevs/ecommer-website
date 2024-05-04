@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-black rounded-2xl fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+      className={`bg-gray-900 fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
         isScrolled ? 'bg-black shadow' : 'bg-transparent'
       }`}
     >
@@ -38,14 +38,12 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <Link href="/products" className="text-white hover:underline-offset-8">Products</Link>
-                <Link href="/" className="text-white hover:underline-offset-8">Products</Link>
-                <Link href="/" className="text-white hover:underline-offset-8">Products</Link>
               </div>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             {/* User menu */}
+            <button className='bg-blue-500 rounded-full p-1 w-14'>Add</button>
           </div>
         </div>
       </div>
