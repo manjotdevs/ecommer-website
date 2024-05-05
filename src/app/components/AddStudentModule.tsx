@@ -15,7 +15,7 @@ const AddStudentModule: React.FC<AddStudentModulePrps> = (props) => {
 
         <div className="flex flex-col p-5 space-y-5">
           <input type="text" inputMode="text" className="text-black" placeholder="Student Name" />
-          <input type="number" style={{ '-moz-appearance': 'textfield' }} pattern="[0-9]*" inputMode="numeric" className="text-black" placeholder="Fee" />
+          <input type="number" pattern="[0-9]*"  style={{ WebkitAppearance: 'none', MozAppearance: 'textfield' }} inputMode="numeric" className="appearance-none text-black" placeholder="Fee" />
           <input type="date" inputMode="numeric" className="text-black" placeholder="Date" />
         </div>
 
