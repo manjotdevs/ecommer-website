@@ -3,6 +3,7 @@ import { CircleX } from 'lucide-react';
 
 interface AddStudentModulePrps{
     subject: string;
+    onclose: Function;
   }
 
 const AddStudentModule: React.FC<AddStudentModulePrps> = (props) => {
@@ -14,7 +15,7 @@ const AddStudentModule: React.FC<AddStudentModulePrps> = (props) => {
             </div>
 
             <div>
-                <button ><CircleX className='text-white'/></button>
+                <button onClick={props.onclose} ><CircleX className='text-white'/></button>
             </div>
 
         </div>

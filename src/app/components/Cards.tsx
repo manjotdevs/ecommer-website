@@ -18,7 +18,7 @@ const Cards: React.FC<CardsProps> = (props) => {
   const [showModole , setShowModole] = useState(false);
   return (
     <>
-    {showModole && <AddStudentModule subject={props.subject} />}
+    {showModole && <AddStudentModule onclose={() => setShowModole(false)} subject={props.subject} />}
     <div className="bg-gray-900 text-white rounded-2xl w-96 h-60 p-5">
       <div className="flex space-x-7 mb-4">
         <div>
