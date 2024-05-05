@@ -5,7 +5,7 @@ interface AddStudentModulePrps{
     subject: string;
   }
 
-const AddStudentModule: React.FC<AddStudentModulePrps> = (props,onClick) => {
+const AddStudentModule: React.FC<AddStudentModulePrps> = (props) => {
     return(
         <div>
             <div>
