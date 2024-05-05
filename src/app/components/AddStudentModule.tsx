@@ -14,7 +14,7 @@ const AddStudentModule: React.FC<AddStudentModulePrps> = (props) => {
             </div>
 
             <div>
-                <button onClick={onClick} ><CircleX className='text-white'/></button>
+                <button ><CircleX className='text-white'/></button>
             </div>
 
         </div>
