@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-gray-900 fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+      className={`bg-gray-950 fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
         isScrolled ? 'bg-black shadow' : 'bg-transparent'
       }`}
     >
