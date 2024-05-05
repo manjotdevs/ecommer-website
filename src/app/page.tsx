@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Cards from "./components/Cards";
-
 export default function Home() {
   return (
     <main>
@@ -9,7 +8,7 @@ export default function Home() {
           This is main page
         </h1>
         <div className="m-52" >
-        <Cards subject="Accounts" teacher="Manjot" text="als;djf;lajd" />
+        <Cards subject="Accounts" teacher="Manjot" class="12"  />
       </div>
       </div>
     </main>
