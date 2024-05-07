@@ -1,5 +1,3 @@
-"use client";
-
 interface AddStudentModulePrps {
   subject: string;
   onclose: Function;
@@ -13,11 +11,20 @@ const AddStudentModule: React.FC<AddStudentModulePrps> = (props) => {
           <p className="text-white justify-center p-2">{props.subject}</p>
         </div>
 
-        <div className="flex flex-col p-5 space-y-5">
-          <input type="text" inputMode="text" className="text-black" placeholder="Student Name" />
-          <input type="number" pattern="[0-9]*"  style={{ WebkitAppearance: 'none', MozAppearance: 'textfield' }} inputMode="numeric" className="appearance-none text-black" placeholder="Fee" />
-          <input type="date" inputMode="numeric" className="text-black" placeholder="Date" />
-        </div>
+        <div className="">
+          <form className="text-white space-x-3 space-y-12 p-8 flex flex-col " action="">
+          <label htmlFor="student">Student Name  
+          <input id="student" type="text" inputMode="text" className="text-black" placeholder="Student Name" />
+          </label>
+          <label htmlFor="">
+          <input  type="number" pattern="[0-9]*"  style={{ WebkitAppearance: 'none', MozAppearance: 'textfield' }} inputMode="numeric" className="appearance-none text-black" placeholder="Fee" />
+          </label>
+          <label htmlFor="">
+          <input  type="date" inputMode="numeric" className="text-black" placeholder="Date" />
+          </label>
+ 
+          </form>
+       </div>
 
         <div>
           <button
